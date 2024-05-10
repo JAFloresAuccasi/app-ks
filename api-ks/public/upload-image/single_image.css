@@ -1,0 +1,42 @@
+.image-container{
+    width: 90%;
+    margin: 0 auto 30px auto;
+}
+.image-container img{
+    display: block;
+    position: relative;
+    max-width: 100%;
+    max-height: 400px;
+    margin: auto;
+}
+figcaption{
+    text-align: center;
+    color: #fff;
+}
+
+input[type="file"]{
+    display: none;
+}
+.label-upload-image{
+    display: block;
+    position: relative;
+    background-color:#cecdcd13;
+    color: #000;
+    font-size: 15px;
+   text-align: center;
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+#blog-remove-image{
+     color: #FF0000; 
+     cursor: pointer;
+    }
+
+    /* este pertenece al combobox de blog */
+#blog_id{
+    cursor: pointer;
+}

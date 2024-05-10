@@ -1,0 +1,182 @@
+import React from "react";
+
+import { Link, NavLink } from "react-router-dom";
+
+//export default function NavBar() {
+  //return (
+    const NavBar = () => {
+      return (
+    <div>
+    <header className="wrapper bg-soft-primary">
+      <nav className="navbar center-nav transparent position-absolute navbar-expand-lg navbar-dark caret-none">
+        <div className="container flex-lg-row flex-nowrap align-items-center">
+          <div className="navbar-brand w-100">
+            <Link to="/">
+              <img
+                className="logo-dark"
+                src="http://my-web.test/Theme/sandbox/assets/dev/img/logo-light.png"
+                srcSet="img/logo@2x.png 2x"
+                alt=""
+              />
+              <img
+                className="logo-light"
+                src="http://my-web.test/Theme/sandbox/assets/dev/img/logo-light.png"
+                srcSet="img/logo-light@2x.png 2x"
+                alt=""
+              />
+            </Link>
+          </div>
+          <div className="navbar-collapse offcanvas-nav">
+            <div className="offcanvas-header d-lg-none d-xl-none">
+              <Link to="/">
+                <img
+                  src="http://my-web.test/Theme/sandbox/assets/dev/img/logo-light.png"
+                  srcSet="img/logo-light@2x.png 2x"
+                  alt=""
+                />
+              </Link>
+              <button
+                type="button"
+                className="btn-close btn-close-white offcanvas-close offcanvas-nav-close"
+                aria-label="Close"
+              />
+            </div>
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link className="nav-link" style={{color:'#000'}} to="#!">
+                  Demos
+                </Link>
+                <ul className="dropdown-menu mega-menu mega-menu-img">
+                  <li className="mega-menu-content">
+                    <ul className="row row-cols-1 row-cols-lg-6 gx-0 gx-lg-4 gy-lg-2 list-unstyled">
+                      <li className="col">
+                        <a className="dropdown-item" href="index.html">
+                          <figure className="rounded lift d-none d-lg-block">
+                            <img
+                              src="../public/img/demos/vc8.jpg"
+                              srcSet="img/demos/mi1@2x.jpg 2x"
+                              alt=""
+                            />
+                          </figure>
+                          <span className="d-lg-none">Demo I</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li className="nav-item dropdown">
+                <Link className="nav-link" style={{color:'#000'}} to="/">Home</Link>
+              </li>
+              <li className="nav-item dropdown">
+                <Link className="nav-link" style={{color:'#000'}} to="/">categorias</Link>
+              </li>
+              <li className="nav-item dropdown">
+                <NavLink className="nav-link" style={{color:'#000'}} to="/login">
+                  Publicar
+                </NavLink>
+              </li>
+            </ul>
+          </div>
+          <div className="navbar-other w-100 d-flex ms-auto">
+            <ul
+              className="navbar-nav flex-row align-items-center ms-auto"
+              data-sm-skip="true"
+            >
+              <li className="nav-item dropdown language-select text-uppercase">
+                <a
+                  className="nav-link dropdown-item dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >En
+                </a>
+                <ul className="dropdown-menu">
+                  <li className="nav-item">
+                    <a className="dropdown-item" href="#">
+                      En
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="dropdown-item" href="#">
+                      De
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a className="dropdown-item" href="#">
+                      Es
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" data-toggle="offcanvas-info">
+                  <i className="uil uil-info-circle" />
+                </a>
+              </li>
+              <li className="nav-item d-lg-none">
+                <div className="navbar-hamburger">
+                  <button
+                    className="hamburger animate plain"
+                    data-toggle="offcanvas-nav"
+                  >
+                    <span />
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div className="offcanvas-info text-inverse">
+        <button
+          type="button"
+          className="btn-close btn-close-white offcanvas-close offcanvas-info-close"
+          aria-label="Close"
+        />
+        <a href="index.html">
+          <img
+            className="mb-3"
+            src="img/logo-light.png"
+            srcSet="img/logo-light@2x.png 2x"
+            alt=""
+          />
+        </a>
+        <div className="widget">
+          <h4 className="widget-title text-white mb-2 text-danger">Menu</h4>
+          <ul className="list-unstyled">
+            <li>
+              <Link to="/publicar">Publicar Anuncio</Link>
+            </li>
+            <li>
+              <Link to="/precios">Precios</Link>
+            </li>
+            <li>
+              <Link to="/admin">Admin</Link>
+            </li>
+            <li>
+              <Link to="/contacto">Contacto</Link>
+            </li>
+            <li>
+              <Link to="/area-legal">Area Legal</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    </div>
+  );
+};
+export default NavBar;
+
+
+document.querySelectorAll('.banner--clone li a').forEach(function(a){
+  document.querySelectorAll('#root nav li a').forEach(function(b){
+      //console.log(b.getAttribute('href'))
+      if(a.getAttribute('href') === b.getAttribute('href')){
+          console.log(b.getAttribute('href'))
+      }
+  })
+})

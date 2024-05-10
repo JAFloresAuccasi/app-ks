@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('head.html')
+	<link rel="stylesheet" href="css/theme/blue.css">
+</head>
+<body>
+	<div class="content-wrapper">
+		<header class="wrapper bg-soft-primary">
+			@@include('header.html')
+		</header>
+		<!-- /header -->
+		<section class="wrapper bg-soft-primary">
+			<div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+				<div class="row">
+					<div class="col-lg-8 mx-auto">
+						<h1 class="display-1 mb-3">Media Player</h1>
+						<nav class="d-inline-block" aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#">Home</a></li>
+								<li class="breadcrumb-item"><a href="#">Elements</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Media Player</li>
+							</ol>
+						</nav>
+						<!-- /nav -->
+					</div>
+					<!-- /column -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /section -->
+		<section class="wrapper bg-light wrapper-border">
+			<div class="container py-14 py-md-16">
+				<h2 class="display-5 mb-8 text-center">HTML5 Video</h2>
+				<div class="row">
+					<div class="col-lg-10 mx-auto">
+						<video poster="img/photos/movie.jpg" class="player" playsinline controls preload="none">
+							<source src="media/movie.mp4" type="video/mp4">
+							<source src="media/movie.webm" type="video/webm">
+						</video>
+					</div>
+					<!-- /column -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /section -->
+		<section class="wrapper bg-light wrapper-border">
+			<div class="container py-14 py-md-16">
+				<h2 class="display-5 mb-8 text-center">Vimeo Video</h2>
+				<div class="row">
+					<div class="col-lg-10 mx-auto">
+						<div class="player" data-plyr-provider="vimeo" data-plyr-embed-id="15801179"></div>
+					</div>
+					<!-- /column -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /section -->
+		<section class="wrapper bg-light">
+			<div class="container py-14 py-md-16">
+				<h2 class="display-5 mb-8 text-center">YouTube Video</h2>
+				<div class="row">
+					<div class="col-lg-10 mx-auto">
+						<div class="player" data-plyr-provider="youtube" data-plyr-embed-id="j_Y2Gwaj7Gs"></div>
+					</div>
+					<!-- /column -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /section -->
+	</div>
+	<!-- /.content-wrapper -->
+	<footer class="bg-dark text-inverse">
+	  <div class="container py-13 py-md-15">
+	    @@include('footer-widgets.html')
+	  </div>
+	  <!-- /.container -->
+	</footer>
+	@@include('page-progress.html')
+	@@include('scripts.html')
+</body>
+</html>

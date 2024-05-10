@@ -1,0 +1,179 @@
+.color-text-ATF {
+    color: #fa0a0adc;
+}
+.AFt-margin-bottom {
+    margin-bottom: -4.5rem !important;
+}
+.atf-input {
+    margin-right: 26px;
+    margin-left: 17px;
+}
+
+.shop_fixed-top {
+    position: fixed;
+    top: 9rem;
+    left: 80rem;
+    z-index: 1030;
+}
+
+.url_div {
+    padding-right: 0.75rem !important;
+    padding-left: 1.5rem !important;
+}
+
+.atf-botton {
+    padding: 0.5rem 5rem !important;
+    font-size: 1.25rem !important;
+    line-height: 1.5 !important;
+    border-radius: 0.3rem !important;
+}
+
+.image-test {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 144.5%;
+    height: 21rem;
+    margin-top: -3rem;
+    margin-left: -3rem;
+}
+.atf-contend-image {
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+}
+.image-atf {
+    position: relative;
+    max-width: 100%;
+    height: 13rem;
+    margin-top: 0rem;
+    margin-left: 0rem;
+}
+.imageclass {
+    width: 100%;
+    height: 100%;
+}
+.image-vanner {
+    border-radius: 1.5%;
+    margin-top: 1rem;
+    max-width: 100%;
+}
+.vaner-edit {
+    float: left;
+    padding: 5px;
+    background-color: #e6e6e6;
+    width: 400px;
+    font-family: helvetica;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.naver-hiden-view {
+    float: left;
+    padding: 5px;
+    background-color: #e6e6e6;
+    width: 400px;
+    font-family: helvetica;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20rem;
+}
+
+.boton_mostrar {
+    float: right;
+    font-size: 12px;
+    line-height: 20px;
+    color: #de7217;
+}
+#contenido {
+    clear: both;
+    border: 2px solid #e6e6e6;
+    margin-top: 131px;
+    padding: 0px;
+    width: 35rem;
+    overflow: auto;
+    font-family: helvetica;
+    font-size: 14px;
+    margin-left: 56px;
+    text-align: justify;
+}
+
+#hiden_pop_up {
+    clear: both;
+    padding: 0px;
+    left: 85rem;
+    top: 11rem;
+    height: 40rem;
+}
+
+.test-view {
+    left: 0rem;
+    margin-top: 5rem;
+    margin-left: 31rem;
+    margin-bottom: 6rem;
+}
+.test_22 {
+    float: left;
+    margin-top: 131px;
+    padding: 0px;
+    width: 35rem;
+    font-family: helvetica;
+    font-size: 14px;
+    margin-left: 56px;
+    text-align: justify;
+}
+      @media only screen and (-webkit-min-device-pixel-ratio: 2.625) {
+        .test-gavy {
+            background-attachment: fixed !important;
+      }
+    }
+.inputs{
+    text-align: center;
+    height: calc(1.5em + 0.75rem + 2px);
+    border: solid #d1d3e2;
+}
+
+.atf_monthly_emails {
+    background-color:#eaecf400 !important;
+}
+.atf_monthly_p {
+    margin-top:21px !important;
+}
+
+.atf_monthly {
+    height: 80px !important;
+}
+
+@media (min-width: 769px) {
+    .atf_monthly {
+        height: 40px !important;
+    }
+}
+.atf-text{
+    margin-bottom: 0rem;
+    margin-left: 20px;
+}
+
+.atf-button-delete{
+    font-size: 1.3rem; 
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 35px;
+    background-color: white;
+    border: none;
+}
+
+.atf-margin-title-sections{
+    margin-bottom: 0rem !important;
+}
+
+.top-custom-switch{
+    top: 25%;
+}
+
+@media (max-width: 769px) {
+    .icon-delete {
+        margin-top: -20px !important;
+        margin-bottom: 0px !important;
+    }
+}

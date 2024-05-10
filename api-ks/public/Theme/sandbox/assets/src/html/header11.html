@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('head.html')
+	<link rel="stylesheet" href="css/theme/blue.css">
+</head>
+<body>
+	<div class="content-wrapper">
+		<header class="wrapper bg-soft-primary">
+			<nav class="navbar center-logo navbar-expand-lg navbar-dark navbar-bg-dark">
+				<div class="container justify-content-between align-items-center">
+					<div class="d-flex flex-row w-100 justify-content-between align-items-center d-lg-none">
+						<div class="navbar-brand"><a href="index.html"><img src="img/logo-light.png" srcset="img/logo-light@2x.png 2x" alt="" /></a></div>
+						<div class="navbar-other ms-auto">
+							<ul class="navbar-nav flex-row align-items-center" data-sm-skip="true">
+								<li class="nav-item">
+									<div class="navbar-hamburger d-lg-none d-xl-none ms-auto"><button class="hamburger animate plain" data-toggle="offcanvas-nav"><span></span></button></div>
+								</li>
+							</ul>
+							<!-- /.navbar-nav -->
+						</div>
+						<!-- /.navbar-other -->
+					</div>
+					<!-- /.d-flex -->
+					<div class="navbar-collapse-wrapper d-flex flex-row align-items-center w-100">
+						<div class="navbar-collapse offcanvas-nav">
+							<div class="offcanvas-header mx-lg-auto order-0 order-lg-1 d-lg-flex px-lg-15">
+								<a href="index.html"><img src="img/logo-light.png" srcset="img/logo-light@2x.png 2x" alt="" /></a>
+								<button type="button" class="btn-close btn-close-white offcanvas-close offcanvas-nav-close d-md-none" aria-label="Close"></button>
+							</div>
+							@@include('navbar-split.html')
+						</div>
+						<!-- /.navbar-collapse -->
+					</div>
+					<!-- /.navbar-collapse-wrapper -->
+				</div>
+				<!-- /.container -->
+			</nav>
+			<!-- /.navbar -->
+		</header>
+		<!-- /header -->
+		<section class="wrapper bg-soft-primary">
+			<div class="container pt-14 pb-13 py-md-16 text-center">
+				<div class="row">
+					<div class="col-lg-8 mx-auto">
+						<h1 class="display-1 mb-3">Center Logo - Dark</h1>
+						<nav class="d-inline-block" aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#">Home</a></li>
+								<li class="breadcrumb-item"><a href="#">Features</a></li>
+								<li class="breadcrumb-item"><a href="#">Header</a></li>
+								<li class="breadcrumb-item"><a href="#">Center Logo</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Dark</li>
+							</ol>
+						</nav>
+						<!-- /nav -->
+					</div>
+					<!-- /column -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /section -->
+		@@include('dummy-content.html')
+	</div>
+	<!-- /.content-wrapper -->
+	<footer class="bg-dark text-inverse">
+	  <div class="container py-13 py-md-15">
+	    @@include('footer-widgets.html')
+	  </div>
+	  <!-- /.container -->
+	</footer>
+	@@include('page-progress.html')
+	@@include('scripts.html')
+</body>
+</html>

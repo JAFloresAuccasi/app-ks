@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('head.html')
+	<link rel="stylesheet" href="css/theme/blue.css">
+</head>
+<body>
+	<div class="content-wrapper">
+		<header class="wrapper bg-soft-primary">
+			@@include('header.html')
+		</header>
+		<!-- /header -->
+		<section class="wrapper bg-soft-primary">
+			<div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+				<div class="row">
+					<div class="col-lg-8 mx-auto">
+						<h1 class="display-1 mb-3">Scroll Animations</h1>
+						<nav class="d-inline-block" aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#">Home</a></li>
+								<li class="breadcrumb-item"><a href="#">Elements</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Scroll Animations</li>
+							</ol>
+						</nav>
+						<!-- /nav -->
+					</div>
+					<!-- /column -->
+				</div>
+				<!-- /.row -->
+				<div class="row">
+					<div class="col-lg-3 mx-auto">
+						<form class="Preview">
+							<select class="form-select" onchange="ac(this.value);">
+								<option value="fadeIn" selected>fadeIn</option>
+								<option value="slideInLeft">slideInLeft</option>
+								<option value="slideInRight">slideInRight</option>
+								<option value="slideInDown">slideInDown</option>
+								<option value="slideInUp">slideInUp</option>
+								<option value="zoomIn">zoomIn</option>
+								<option value="zoomOut">zoomOut</option>
+								<option value="rotateIn">rotateIn</option>
+								<option value="bounceIn">bounceIn</option>
+								<option value="bounceInLeft">bounceInLeft</option>
+								<option value="bounceInRight">bounceInRight</option>
+								<option value="bounceInDown">bounceInDown</option>
+								<option value="bounceInUp">bounceInUp</option>
+								<option value="flipInX">flipInX</option>
+								<option value="flipInY">flipInY</option>
+							</select>
+							<input class="d-none" type="button" value="RELOAD" onclick="reload();">
+						</form>
+					</div>
+					<!-- /column -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /section -->
+		<section class="wrapper bg-light" style="overflow:hidden;">
+			<div class="container py-14 py-md-16">
+				<h2 class="display-5 mb-4">Standard Example</h2>
+				<p>Set the <span class="underline">"data-cue"</span> attribute in the target element and specify the animation type.</p>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="card code-wrapper mt-5 mb-11">
+							<div class="card-body">
+								<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"1.jpg"</span> <span class="hljs-attr">data-cue</span>=<span class="hljs-string">"</span></span><span class="anim"><span class="hljs-tag"><span class="hljs-string">fadeIn</span></span></span><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"2.jpg"</span> <span class="hljs-attr">data-cue</span>=<span class="hljs-string">"</span></span><span class="anim"><span class="hljs-tag"><span class="hljs-string">fadeIn</span></span></span><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"3.jpg"</span> <span class="hljs-attr">data-cue</span>=<span class="hljs-string">"</span></span><span class="anim"><span class="hljs-tag"><span class="hljs-string">fadeIn</span></span></span><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"4.jpg"</span> <span class="hljs-attr">data-cue</span>=<span class="hljs-string">"</span></span><span class="anim"><span class="hljs-tag"><span class="hljs-string">fadeIn</span></span></span><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"5.jpg"</span> <span class="hljs-attr">data-cue</span>=<span class="hljs-string">"</span></span><span class="anim"><span class="hljs-tag"><span class="hljs-string">fadeIn</span></span></span><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span></code></pre>
+							</div>
+							<!--/.card-body -->
+						</div>
+						<!--/.card -->
+					</div>
+					<!-- /column -->
+				</div>
+				<!-- /.row -->
+				<div class="row g-4">
+					<div class="col" data-cue="fadeIn">
+						<figure class="rounded"><img src="img/photos/p1.jpg" srcset="img/photos/p1@2x.jpg 2x" alt="" /></figure>
+					</div>
+					<div class="col" data-cue="fadeIn">
+						<figure class="rounded"><img src="img/photos/p2.jpg" srcset="img/photos/p2@2x.jpg 2x" alt="" /></figure>
+					</div>
+					<div class="col" data-cue="fadeIn">
+						<figure class="rounded"><img src="img/photos/p3.jpg" srcset="img/photos/p3@2x.jpg 2x" alt="" /></figure>
+					</div>
+					<div class="col" data-cue="fadeIn">
+						<figure class="rounded"><img src="img/photos/p4.jpg" srcset="img/photos/p4@2x.jpg 2x" alt="" /></figure>
+					</div>
+					<div class="col" data-cue="fadeIn">
+						<figure class="rounded"><img src="img/photos/p5.jpg" srcset="img/photos/p5@2x.jpg 2x" alt="" /></figure>
+					</div>
+				</div>
+				<h2 class="display-5 mt-16 mb-4">Parent Wrap</h2>
+				<p>You can wrap it in a parent element by setting the <span class="underline">"data-cues"</span> attribute.</p>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="card code-wrapper mt-5 mb-11">
+							<div class="card-body">
+								<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-cues</span>=<span class="hljs-string">"</span></span><span class="anim"><span class="hljs-tag"><span class="hljs-string">fadeIn</span></span></span><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"1.jpg"</span>&gt;</span>
+ ...
+ <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"5.jpg"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+							</div>
+							<!--/.card-body -->
+						</div>
+						<!--/.card -->
+					</div>
+					<!-- /column -->
+				</div>
+				<!-- /.row -->
+				<div class="row g-4" data-cues="fadeIn">
+					<div class="col" data-cue="fadeIn">
+						<figure class="rounded"><img src="img/photos/p1.jpg" srcset="img/photos/p1@2x.jpg 2x" alt="" /></figure>
+					</div>
+					<div class="col" data-cue="fadeIn">
+						<figure class="rounded"><img src="img/photos/p2.jpg" srcset="img/photos/p2@2x.jpg 2x" alt="" /></figure>
+					</div>
+					<div class="col" data-cue="fadeIn">
+						<figure class="rounded"><img src="img/photos/p3.jpg" srcset="img/photos/p3@2x.jpg 2x" alt="" /></figure>
+					</div>
+					<div class="col" data-cue="fadeIn">
+						<figure class="rounded"><img src="img/photos/p4.jpg" srcset="img/photos/p4@2x.jpg 2x" alt="" /></figure>
+					</div>
+					<div class="col" data-cue="fadeIn">
+						<figure class="rounded"><img src="img/photos/p5.jpg" srcset="img/photos/p5@2x.jpg 2x" alt="" /></figure>
+					</div>
+				</div>
+				<h2 class="display-5 mt-16 mb-4">Grouping Wrap</h2>
+				<p>You can group target elements by setting the <span class="underline">"data-group"</span> attribute. With grouping, when the first element is triggered, the remaining elements are also triggered sequentially, regardless of the scroll amount.</p>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="card code-wrapper mt-5 mb-11">
+							<div class="card-body">
+								<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-cues</span>=<span class="hljs-string">"</span></span><span class="anim"><span class="hljs-tag"><span class="hljs-string">fadeIn</span></span></span><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">data-group</span>=<span class="hljs-string">"images"</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"1.jpg"</span>&gt;</span>
+ ...
+ <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"5.jpg"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+							</div>
+							<!--/.card-body -->
+						</div>
+						<!--/.card -->
+					</div>
+					<!-- /column -->
+				</div>
+				<!-- /.row -->
+				<div class="row g-4" data-cues="fadeIn" data-group="images">
+					<div class="col" data-cue="fadeIn">
+						<figure class="rounded"><img src="img/photos/p1.jpg" srcset="img/photos/p1@2x.jpg 2x" alt="" /></figure>
+					</div>
+					<div class="col" data-cue="fadeIn">
+						<figure class="rounded"><img src="img/photos/p2.jpg" srcset="img/photos/p2@2x.jpg 2x" alt="" /></figure>
+					</div>
+					<div class="col" data-cue="fadeIn">
+						<figure class="rounded"><img src="img/photos/p3.jpg" srcset="img/photos/p3@2x.jpg 2x" alt="" /></figure>
+					</div>
+					<div class="col" data-cue="fadeIn">
+						<figure class="rounded"><img src="img/photos/p4.jpg" srcset="img/photos/p4@2x.jpg 2x" alt="" /></figure>
+					</div>
+					<div class="col" data-cue="fadeIn">
+						<figure class="rounded"><img src="img/photos/p5.jpg" srcset="img/photos/p5@2x.jpg 2x" alt="" /></figure>
+					</div>
+				</div>
+				<h2 class="display-5 mt-16 mb-4">[data-duration]</h2>
+				<p>You can set the showing time of the element.(ms)</p>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="card code-wrapper mt-5 mb-11">
+							<div class="card-body">
+								<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-cues</span>=<span class="hljs-string">"</span></span><span class="anim"><span class="hljs-tag"><span class="hljs-string">fadeIn</span></span></span><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">data-duration</span>=<span class="hljs-string">"2000"</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"1.jpg"</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"2.jpg"</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"3.jpg"</span> <span class="hljs-attr">data-duration</span>=<span class="hljs-string">"500"</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"4.jpg"</span> <span class="hljs-attr">data-duration</span>=<span class="hljs-string">"500"</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"5.jpg"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+							</div>
+							<!--/.card-body -->
+						</div>
+						<!--/.card -->
+					</div>
+					<!-- /column -->
+				</div>
+				<!-- /.row -->
+				<div class="row g-4" data-cues="fadeIn" data-duration="2000">
+					<div class="col" data-cue="fadeIn">
+						<figure class="rounded"><img src="img/photos/p1.jpg" srcset="img/photos/p1@2x.jpg 2x" alt="" /></figure>
+					</div>
+					<div class="col" data-cue="fadeIn">
+						<figure class="rounded"><img src="img/photos/p2.jpg" srcset="img/photos/p2@2x.jpg 2x" alt="" /></figure>
+					</div>
+					<div class="col" data-cue="fadeIn" data-duration="500">
+						<figure class="rounded"><img src="img/photos/p3.jpg" srcset="img/photos/p3@2x.jpg 2x" alt="" /></figure>
+					</div>
+					<div class="col" data-cue="fadeIn" data-duration="500">
+						<figure class="rounded"><img src="img/photos/p4.jpg" srcset="img/photos/p4@2x.jpg 2x" alt="" /></figure>
+					</div>
+					<div class="col" data-cue="fadeIn">
+						<figure class="rounded"><img src="img/photos/p5.jpg" srcset="img/photos/p5@2x.jpg 2x" alt="" /></figure>
+					</div>
+				</div>
+				<h2 class="display-5 mt-16 mb-4">[data-interval]</h2>
+				<p>You can set the showing interval time of the element.(ms)</p>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="card code-wrapper mt-5 mb-11">
+							<div class="card-body">
+								<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-cues</span>=<span class="hljs-string">"</span></span><span class="anim"><span class="hljs-tag"><span class="hljs-string">fadeIn</span></span></span><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">data-interval</span>=<span class="hljs-string">"-200"</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"1.jpg"</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"2.jpg"</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"3.jpg"</span> <span class="hljs-attr">data-interval</span>=<span class="hljs-string">"1000"</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"4.jpg"</span> <span class="hljs-attr">data-interval</span>=<span class="hljs-string">"-0.2"</span>&gt;</span>   <span class="hljs-comment">&lt;!-- 200ms --&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"5.jpg"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+							</div>
+							<!--/.card-body -->
+						</div>
+						<!--/.card -->
+					</div>
+					<!-- /column -->
+				</div>
+				<!-- /.row -->
+				<div class="row g-4" data-cues="fadeIn" data-interval="-200">
+					<div class="col" data-cue="fadeIn">
+						<figure class="rounded"><img src="img/photos/p1.jpg" srcset="img/photos/p1@2x.jpg 2x" alt="" /></figure>
+					</div>
+					<div class="col" data-cue="fadeIn">
+						<figure class="rounded"><img src="img/photos/p2.jpg" srcset="img/photos/p2@2x.jpg 2x" alt="" /></figure>
+					</div>
+					<div class="col" data-cue="fadeIn" data-interval="1000">
+						<figure class="rounded"><img src="img/photos/p3.jpg" srcset="img/photos/p3@2x.jpg 2x" alt="" /></figure>
+					</div>
+					<div class="col" data-cue="fadeIn" data-interval="-0.2">
+						<figure class="rounded"><img src="img/photos/p4.jpg" srcset="img/photos/p4@2x.jpg 2x" alt="" /></figure>
+					</div>
+					<div class="col" data-cue="fadeIn">
+						<figure class="rounded"><img src="img/photos/p5.jpg" srcset="img/photos/p5@2x.jpg 2x" alt="" /></figure>
+					</div>
+				</div>
+				<h2 class="display-5 mt-16 mb-4">[data-delay]</h2>
+				<p>You can set the showing delay time of the element.(ms)</p>
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="card code-wrapper mt-5 mb-11">
+							<div class="card-body">
+								<pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-cues</span>=<span class="hljs-string">"</span></span><span class="anim"><span class="hljs-tag"><span class="hljs-string">fadeIn</span></span></span><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">data-delay</span>=<span class="hljs-string">"1000"</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"1.jpg"</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"2.jpg"</span> <span class="hljs-attr">data-delay</span>=<span class="hljs-string">"2000"</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"3.jpg"</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"4.jpg"</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"5.jpg"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+							</div>
+							<!--/.card-body -->
+						</div>
+						<!--/.card -->
+					</div>
+					<!-- /column -->
+				</div>
+				<!-- /.row -->
+				<div class="row g-4" data-cues="fadeIn" data-delay="1000">
+					<div class="col" data-cue="fadeIn">
+						<figure class="rounded"><img src="img/photos/p1.jpg" srcset="img/photos/p1@2x.jpg 2x" alt="" /></figure>
+					</div>
+					<div class="col" data-cue="fadeIn" data-delay="2000">
+						<figure class="rounded"><img src="img/photos/p2.jpg" srcset="img/photos/p2@2x.jpg 2x" alt="" /></figure>
+					</div>
+					<div class="col" data-cue="fadeIn">
+						<figure class="rounded"><img src="img/photos/p3.jpg" srcset="img/photos/p3@2x.jpg 2x" alt="" /></figure>
+					</div>
+					<div class="col" data-cue="fadeIn">
+						<figure class="rounded"><img src="img/photos/p4.jpg" srcset="img/photos/p4@2x.jpg 2x" alt="" /></figure>
+					</div>
+					<div class="col" data-cue="fadeIn">
+						<figure class="rounded"><img src="img/photos/p5.jpg" srcset="img/photos/p5@2x.jpg 2x" alt="" /></figure>
+					</div>
+				</div>
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /section -->
+	</div>
+	<!-- /.content-wrapper -->
+	<footer class="bg-dark text-inverse">
+	  <div class="container py-13 py-md-15">
+	    @@include('footer-widgets.html')
+	  </div>
+	  <!-- /.container -->
+	</footer>
+	@@include('page-progress.html')
+	@@include('scripts.html')
+	<script>
+		let name = document.querySelectorAll('.anim .hljs-string');
+		let elm = document.querySelectorAll('[data-cue]:not(span)');
+		let select = document.querySelector('select');
+		let button = document.querySelector('input');
+
+		function ac(val) {
+			for (let i = 0; i < name.length; i++) {
+				name[i].innerHTML = val;
+			}
+			button.click();
+		}
+
+		function reload() {
+			for (let i = 0; i < elm.length; i++) {
+				elm[i].style.animationName = null;
+				elm[i].setAttribute('data-cue', select.value);
+				elm[i].removeAttribute('data-show');
+			}
+			scrollCue.update();
+		}
+	</script>
+</body>
+</html>
