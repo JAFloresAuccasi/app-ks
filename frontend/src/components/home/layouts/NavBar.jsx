@@ -85,7 +85,7 @@ const NavBar = () => {
                     style={{ color: "#000" }}
                     to="/login"
                   >
-                    Publicar
+                    Publicar test_politc
                   </NavLink>
                 </li>
               </ul>
