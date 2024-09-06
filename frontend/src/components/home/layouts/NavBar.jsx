@@ -71,7 +71,7 @@ const NavBar = () => {
                     style={{ color: "#000" }}
                     to="/"
                   >
-                    Home
+                    Inició
                   </NavLink>
                 </li>
                 <li className="nav-item dropdown">
